@@ -1,9 +1,4 @@
-# 🎣 Phishing Email Analysis — Suzain Billing Department
-#### Home lab project analyzing a suspicious phishing email from my own inbox, documenting headers, attachments, IOCs, and IP/domain reputation
-
-> ⚠️ The attachment is included for analysis purposes only. Do not download or execute on your machine.
-
----
+<img width="915" height="178" alt="Screenshot 2025-10-29 at 12 50 36 PM" src="https://github.com/user-attachments/assets/21981563-0e5e-4eff-b98b-3fb01dc1f806" />
 
 #### Email Headers
 - **From:** Ch Hi <hardekonsen74@gmail.com>
