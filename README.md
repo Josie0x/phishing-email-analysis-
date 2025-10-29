@@ -1,11 +1,11 @@
-# Phishing Email Analysis — Suzain Billing Department
+# 🎣 Phishing Email Analysis — Suzain Billing Department
 #### Home lab project analyzing a suspicious phishing email from my own inbox, documenting headers, attachments, IOCs, and IP/domain reputation
 
 > ⚠️ The attachment is included for analysis purposes only. Do not download or execute on your machine.
 
 ---
 
-### Email Headers
+#### Email Headers
 - **From:** Ch Hi <hardekonsen74@gmail.com>
 - **To:** Josiahcharles589@gmail.com
 - **Subject:** Suzain from Billing Department course approved . 10 Oct 2025 
@@ -21,14 +21,14 @@
 
 ---
 
-### Empty body, this email is relying on attachment for phishing scheme 😾
+#### *Empty body, this email is relying on attachment for phishing scheme 😾*
 - **Plain text / HTML content:** `<div dir="ltr"></div>` 
 
 <img width="352" height="136" alt="Screenshot 2025-10-29 at 11 32 53 AM" src="https://github.com/user-attachments/assets/008eae73-75c0-4908-b7a8-c629f595eba6" />
 
 ---
 
-### IP Reputation (Virus Total)
+#### IP Reputation (Virus Total)
 - **Sender IP:** 209.85.220.41
 - **Owner / ASN:** Google (AS15169)
 - **Location:** US
@@ -39,7 +39,7 @@
 
 ---
 
-### Domain Info 
+#### Domain Info 
 - **Domain:** gmail.com  
 - **Domain Age:** ~1997  
 - **Registrar:** Google LLC  
@@ -47,7 +47,7 @@
 
 ---
 
-### Passive Analysis Steps Taken 📊
+#### Passive Analysis Steps Taken 📊
 1. Saved raw `.eml` to project folder
 2. Opened and inspected headers in Gmail
 3. Examined body text and HTML
@@ -55,7 +55,7 @@
 
 ---
 
-### IOC's 🕷️
+#### IOC's 🕷️
 - **Email:** hardekonsen74@gmail.com
 - **IP:** 209.85.220.41
 - **Attachment:** RSVOsEagEGY.pdf **(do NOT execute 🐍)**
@@ -63,12 +63,12 @@
 
 ---
 
-### Recommended Remediation ✅
+#### Recommended Remediation ✅
 - Block IP / domain in email filters if malicious activity observed
 - Do **not** open attachment
 - Educate users on phishing awareness
 
 ---
 
-## Next Up
+#### Next Up
  Boss of the SOC (BOTS) competition by Splunk 🏆
