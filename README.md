@@ -1,55 +1,45 @@
 # Phishing Email Analysis — Suzain Billing Department
+#### Home lab project analyzing a suspicious phishing email from my own inbox, documenting headers, attachments, IOCs, and IP/domain reputation
 
-## Summary
-Home lab project analyzing a suspicious phishing email from my own inbox, documenting headers, attachments, IOCs, and IP/domain reputation for cybersecurity learning and demonstration.
+> ⚠️ The attachment is included for analysis purposes only. Do not download or execute on your machine.
 
 ---
 
-## Email Metadata (Headers)
+### Email Headers
 - **From:** Ch Hi <hardekonsen74@gmail.com>
 - **To:** Josiahcharles589@gmail.com
-- **Subject:** Suzain from Billing Department course approved . 10 Oct 2025
-- **Date:** Fri, 10 Oct 2025 16:13:05 +0000
-- **Message-ID:** <CABB2B8ZoV_4TmS25jPA2QVj3+DLy1y0-r5HaS5M9Ly7jOkfLQQ@mail.gmail.com>
+- **Subject:** Suzain from Billing Department course approved . 10 Oct 2025 
+- **Date:** Fri, 10 Oct 2025 16:13:05 
 - **SPF:** PASS
 - **DKIM:** PASS
 - **DMARC:** PASS
 - **Return-Path:** <hardekonsen74@gmail.com>
-- **Received Path:** Gmail servers (see raw headers)
 
-![Headers screenshot](reports/headers.png)
 
----
+<img width="880" height="367" alt="Screenshot 2025-10-29 at 12 12 51 PM" src="https://github.com/user-attachments/assets/64bcb194-8817-41ef-8a36-b39e4f7782a6" />
 
-## Message Body
-- **Plain text / HTML content:** `<div dir="ltr"></div>` (empty HTML body)
-- **Displayed link text:** None / N/A
-- **Actual URL:** None / N/A
 
 ---
 
-## URLs/IP Reputation
+### Empty body, this email is relying on attachment for phishing scheme 😾
+- **Plain text / HTML content:** `<div dir="ltr"></div>` 
+
+<img width="352" height="136" alt="Screenshot 2025-10-29 at 11 32 53 AM" src="https://github.com/user-attachments/assets/008eae73-75c0-4908-b7a8-c629f595eba6" />
+
+---
+
+### IP Reputation (Virus Total)
 - **Sender IP:** 209.85.220.41
 - **Owner / ASN:** Google (AS15169)
 - **Location:** US
 - **Community Score:** -32
 - **Security Vendors:** 1/95 flagged (Webroot: Malicious / Criminal / Suspicious)
-- **Notes:** IP belongs to Gmail infrastructure; likely false positive.
 
-![VirusTotal screenshot](reports/ip_virustotal.png)
-
----
-
-## Attachments
-| File Name | Type | Size | Hash (SHA256) | Notes |
-|-----------|------|------|---------------|-------|
-| RSVOsEagEGY.pdf | PDF | <FILL IN> | <FILL IN> | Suspicious attachment; not opened |
-
-![Attachment screenshot](reports/attachment.png)
+<img width="1263" height="701" alt="Screenshot 2025-10-29 at 11 39 38 AM" src="https://github.com/user-attachments/assets/c86895e0-ec85-4cd6-97b8-da614af0a89d" />
 
 ---
 
-## Domain Info
+### Domain Info 
 - **Domain:** gmail.com  
 - **Domain Age:** ~1997  
 - **Registrar:** Google LLC  
@@ -57,26 +47,24 @@ Home lab project analyzing a suspicious phishing email from my own inbox, docume
 
 ---
 
-## Passive Analysis Steps Taken
+### Passive Analysis Steps Taken 📊
 1. Saved raw `.eml` to project folder
-2. Opened and inspected headers in Apple Mail / Thunderbird
-3. Examined body text and HTML (no links)
+2. Opened and inspected headers in Gmail
+3. Examined body text and HTML
 4. Extracted sender IP, checked reputation on VirusTotal
-5. Saved attachment (no execution), recorded file name and hash
 
 ---
 
-## Indicators of Compromise (IOCs)
+### IOC's 🕷️
 - **Email:** hardekonsen74@gmail.com
 - **IP:** 209.85.220.41
-- **Attachment:** RSVOsEagEGY.pdf (hash: <FILL IN>)
-- **Links:** None
+- **Attachment:** RSVOsEagEGY.pdf **(do NOT execute 🐍)**
+
 
 ---
 
-## Recommended Remediation
+### Recommended Remediation ✅
 - Block IP / domain in email filters if malicious activity observed
-- Quarantine the message
 - Do **not** open attachment
 - Educate users on phishing awareness
 
