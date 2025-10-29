@@ -1,4 +1,8 @@
-![Phishing Email Lab Banner](banner.png)
+
+## 🎣 Phishing Email Analysis — Suzain Billing Department
+Home lab project analyzing a suspicious phishing email from my own inbox, documenting headers, attachments, IOCs, and IP/domain reputation
+> ⚠️ The attachment is included for analysis purposes only. Do not download or execute on your machine.
+---
 
 
 #### Email Headers
