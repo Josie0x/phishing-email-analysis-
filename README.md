@@ -12,8 +12,8 @@ Home lab project analyzing a suspicious phishing email from my own inbox, docume
 - **Date:** Fri, 10 Oct 2025 16:13:05 
 - **SPF:** PASS
 - **DKIM:** PASS
-- **DMARC:** PASS
-- **Return-Path:** <hardekonsen74@gmail.com>
+- **DMARC:** PASS *(still phishy)*
+
 
 
 <img width="880" height="367" alt="Screenshot 2025-10-29 at 12 12 51 PM" src="https://github.com/user-attachments/assets/64bcb194-8817-41ef-8a36-b39e4f7782a6" />
