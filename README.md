@@ -1,4 +1,5 @@
-<img width="915" height="178" alt="Screenshot 2025-10-29 at 12 50 36 PM" src="https://github.com/user-attachments/assets/21981563-0e5e-4eff-b98b-3fb01dc1f806" />
+![Phishing Email Lab Banner](banner.png)
+
 
 #### Email Headers
 - **From:** Ch Hi <hardekonsen74@gmail.com>
