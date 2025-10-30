@@ -1,7 +1,7 @@
 
 ## 🎣 Phishing Email Analysis — Suzain Billing Department
 Home lab project analyzing a suspicious phishing email from my own inbox, documenting headers, attachments, IOCs, and IP/domain reputation
-> ⚠️ The attachment is included for analysis purposes only. Do not download or execute on your machine.
+
 ---
 
 
@@ -59,7 +59,7 @@ Home lab project analyzing a suspicious phishing email from my own inbox, docume
 #### IOC's 🕷️
 - **Email:** hardekonsen74@gmail.com
 - **IP:** 209.85.220.41
-- **Attachment:** RSVOsEagEGY.pdf **(do NOT execute 🐍)**
+- **Attachment:** RSVOsEagEGY.pdf 🐍
 
 
 ---
