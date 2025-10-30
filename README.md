@@ -70,5 +70,6 @@ Home lab project analyzing a suspicious phishing email from my own inbox, docume
 
 ---
 
-#### Next Up
+#### Next up 
+ Malware Analyzation with FlareVM 🦠
  Boss of the SOC (BOTS) competition by Splunk 🏆
