@@ -34,6 +34,7 @@ Home lab project analyzing a suspicious phishing email from my own inbox, docume
 - **Location:** US
 - **Community Score:** -32
 - **Security Vendors:** 1/95 flagged (Webroot: Malicious / Criminal / Suspicious)
+   ##### *Always reanalyze, as attackers may pre-scan malware during the reconnaissance or preparation phase to evade detection and test defenses*
 
 <img width="1263" height="701" alt="Screenshot 2025-10-29 at 11 39 38 AM" src="https://github.com/user-attachments/assets/c86895e0-ec85-4cd6-97b8-da614af0a89d" />
 
