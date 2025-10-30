@@ -5,7 +5,7 @@ Home lab project analyzing a suspicious phishing email from my own inbox, docume
 ---
 
 
-#### Email Headers
+#### 
 - **From:** Ch Hi <hardekonsen74@gmail.com>
 - **To:** Josiahcharles589@gmail.com
 - **Subject:** Suzain from Billing Department course approved . 10 Oct 2025 
