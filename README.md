@@ -4,71 +4,45 @@ Home lab project analyzing a suspicious phishing email from my own inbox, docume
 
 ---
 
-
-#### 
-- **From:** Ch Hi <hardekonsen74@gmail.com>
-- **To:** Josiahcharles589@gmail.com
-- **Subject:** Suzain from Billing Department course approved . 10 Oct 2025 
-- **Date:** Fri, 10 Oct 2025 16:13:05 
-- **SPF:** PASS
-- **DKIM:** PASS
-- **DMARC:** PASS *(still phishy)*
-
-
+### Summary  
+Analyzed a suspicious phishing email from `hardekonsen74@gmail.com` titled *“Suzain from Billing Department – Course Approved”*.  
+Although SPF, DKIM, and DMARC all **passed**, the message contained an **empty body** and relied on the attached file `RSVOsEagEGY.pdf` to deliver a potential payload.
 
 <img width="880" height="367" alt="Screenshot 2025-10-29 at 12 12 51 PM" src="https://github.com/user-attachments/assets/64bcb194-8817-41ef-8a36-b39e4f7782a6" />
 
-
 ---
-
-#### *Empty body, this email is relying on attachment for phishing scheme 😾*
-- **Plain text / HTML content:** `<div dir="ltr"></div>` 
-
+### Findings  
+- **Sender IP:** `209.85.220.41` (Google ASN15169)  
+- **VirusTotal:** 1/95 flagged (Webroot: *Malicious / Criminal / Suspicious*)  
+- **IOCs:**  
+  - Email: `hardekonsen74@gmail.com`  
+  - IP: `209.85.220.41`  
+  - Attachment: `RSVOsEagEGY.pdf`
 <img width="352" height="136" alt="Screenshot 2025-10-29 at 11 32 53 AM" src="https://github.com/user-attachments/assets/008eae73-75c0-4908-b7a8-c629f595eba6" />
 
 ---
-
-#### IP Reputation (Virus Total)
-- **Sender IP:** 209.85.220.41
-- **Owner / ASN:** Google (AS15169)
-- **Location:** US
-- **Community Score:** -32
-- **Security Vendors:** 1/95 flagged (Webroot: Malicious / Criminal / Suspicious)
-   ##### *Always reanalyze, as attackers may pre-scan malware during the reconnaissance or preparation phase to evade detection and test defenses*
-
 <img width="1263" height="701" alt="Screenshot 2025-10-29 at 11 39 38 AM" src="https://github.com/user-attachments/assets/c86895e0-ec85-4cd6-97b8-da614af0a89d" />
-
----
-
-#### Domain Info 
-- **Domain:** gmail.com  
-- **Domain Age:** ~1997  
-- **Registrar:** Google LLC  
-- **SPF Pass/Fail:** PASS
 
 ---
 
 #### Passive Analysis Steps Taken 📊
 1. Saved raw `.eml` to project folder
-2. Opened and inspected headers in Gmail
+2. Opened and inspected headers
 3. Examined body text and HTML
 4. Extracted sender IP, checked reputation on VirusTotal
 
 ---
+#### MITRE ATT&CK Mapping  
+- **T1566.001** – Phishing: Spearphishing Attachment  
+- **T1204.002** – User Execution: Malicious File  
 
-#### IOC's 🕷️
-- **Email:** hardekonsen74@gmail.com
-- **IP:** 209.85.220.41
-- **Attachment:** RSVOsEagEGY.pdf 🐍
+#### Kill Chain Stage 
+Delivery → Exploitation
 
-
----
-
-#### Recommended Remediation ✅
-- Block IP / domain in email filters if malicious activity observed
-- Do **not** open attachment
-- Educate users on phishing awareness
-
+#### Recommended Remediation  
+- Quarantine the email and block sender/IP.  
+- Do not open attachments from unknown senders.  
+- Reinforce phishing awareness for end users.
 ---
 
 #### Next up 
